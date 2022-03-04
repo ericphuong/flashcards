@@ -1,10 +1,9 @@
 # Lab 1 : 
 
 ### App Description
-`TODO://` Flashcard app that displays a question, clicking on the question will reveal the answer. There are also three multiple choice answers below the question, clicking on an answer will either turn red if the answer is incorrect or green if it is correct. The eye at the bottom of the screen will either hide or reveal the multiple choice answers.
+Flashcard app that displays a question, clicking on the question will reveal the answer. There are also three multiple choice answers below the question, clicking on an answer will either turn red if the answer is incorrect or green if it is correct. The eye at the bottom of the screen will either hide or reveal the multiple choice answers.
 
 ### App Walk-though
-`TODO://`
 
 <img src="http://g.recordit.co/l1Bf9ChrKQ.gif" width=200><br>
 
