@@ -15,4 +15,4 @@
 - [x] Further customize and style the card
 - [x] Add a button that will toggle hiding and showing the answer choices
 
-<img src="https://recordit.co/l1Bf9ChrKQ" width="200" height="400" />
+<img src="http://g.recordit.co/l1Bf9ChrKQ.gif" width="200" height="400" />
