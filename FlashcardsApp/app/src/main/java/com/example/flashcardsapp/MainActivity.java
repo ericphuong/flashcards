@@ -1,13 +1,29 @@
 package com.example.flashcardsapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 100 && resultCode == RESULT_OK) {
+            String string1 = data.getExtras().getString("string1");
+            String string2 = data.getExtras().getString("string2");
+            ((TextView) findViewById(R.id.flashcard_question)).setText(string1);
+            ((TextView) findViewById(R.id.flashcard_answer)).setText(string2);
+            ((TextView) findViewById(R.id.first_answer)).setVisibility(View.INVISIBLE);
+            ((TextView) findViewById(R.id.second_answer)).setVisibility(View.INVISIBLE);
+            ((TextView) findViewById(R.id.third_answer)).setVisibility(View.INVISIBLE);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +89,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.add).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
+                MainActivity.this.startActivityForResult(intent, 100);
+            }
+        });
 
 
+    }
+
+    @NonNull
+    @Override
+    public LayoutInflater getLayoutInflater() {
+        return super.getLayoutInflater();
     }
 }
