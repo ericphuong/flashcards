@@ -5,7 +5,7 @@ Updated Flashcards App to now scroll through previously made flashcards.
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/PYWSnBXwX5.gif" width=200><br>
+<img src="http://g.recordit.co/cVT7Ui0Pxm.gif" width=200><br>
 
 ## Required
 - [x] User can create a card and still see their created card when the app is relaunched.
