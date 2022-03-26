@@ -122,4 +122,14 @@
         android:visibility="visible"
         />
 
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="40dp"
+        android:layout_height="65dp"
+        android:layout_alignRight="@id/first_answer"
+        android:layout_above="@id/first_answer"
+        android:src="@drawable/next"
+        android:visibility="visible"
+        />
+
 </RelativeLayout>
